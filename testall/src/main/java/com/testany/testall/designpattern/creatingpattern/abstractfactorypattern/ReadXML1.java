@@ -19,7 +19,7 @@ import org.w3c.dom.NodeList;
  *
  */
 public class ReadXML1 {
-	private static final String CLASS_NAME = ReadXML1.class.getPackageName();
+	private static final String CLASS_NAME = ReadXML1.class.getPackage().getName();//getPackageName();
 	private static final String PATH_NAME = ReadXML1.class.getResource("").getPath() + "/config1.xml";
 
 	// 该方法用于从XML配置文件中提取具体类类名，并返回一个实例对象
